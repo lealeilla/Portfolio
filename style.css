@@ -55,7 +55,7 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: 0.3s;
+    
 }
 nav a:hover,
 nav a.active{
@@ -87,6 +87,7 @@ nav a.active{
 
     .menu-icon {
         display: block; 
+        float: right;
     }
 
     nav a {
@@ -372,7 +373,7 @@ nav a.active{
 #contact {
     height: 90vh; 
     color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 20px;
     box-sizing: border-box;
 }
@@ -434,8 +435,9 @@ nav a.active{
 input[type="text"], input[type="email"] {
     width: calc(50% - 10px);
     padding: 10px;
-    background-color:rgba(0, 0, 0, 0.8);
-    border: none;
+    background-color:rgba(0, 0, 0, 0.9);
+    border: 1px solid #058879;
+    outline: none;
     border-radius: 10px;
     color: #ccc;
 }
@@ -444,11 +446,19 @@ textarea {
     width: 100%;
     height: 150px;
     padding: 10px;
-    background-color:rgba(0, 0, 0, 0.8);
-    border: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #058879;
     border-radius: 10px;
+    outline: none;
     color: #ccc;
     resize: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    visibility: hidden; 
 }
 
 input::placeholder, textarea::placeholder {

@@ -159,23 +159,28 @@
                     <p>2023</p>
                 </div>
                 <div class="awards">
+                    <a href="https://docs.google.com/document/d/1vvyCcd4ngm6eT-j2F0EFovH_TVUgtQ-FUVaD25I2tOk/" style="text-decoration: none;">
                     <img src="a5.png" alt="">
                     <h5>Prova Moderator</h5>
+                     </a>
                     <p>2024</p>
                 </div>
                 <div class="awards">
+                    <a href="https://skills.yourlearning.ibm.com/certificate/PLAN-E85D0572262C" style="text-decoration: none;">
                     <img src="a1.png" alt="">
-                    <h5>Artifical Intelligence Basic</h5>
+                    <h5>Artifical Intelligence Basic</h5></a>
                     <p>2024</p>
                 </div>
                 <div class="awards">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/E7BZJV56DQCS" style="text-decoration: none;">
                     <img src="a2.png" alt="">
-                    <h5>Data Science using SQL</h5>
+                    <h5>Data Science using SQL</h5></a>
                     <p>2024</p>
                 </div>
                 <div class="awards">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/3UFVSUP4UYCQ" style="text-decoration: none;">
                     <img src="a3.png" alt="">
-                    <h5>Fundamental of Python</h5>
+                    <h5>Fundamental of Python</h5></a>
                     <p>2024</p>
                 </div>
                 <div class="awards">
@@ -213,14 +218,19 @@
                 </div>
             </div>
             <div class="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name">
+                        <span id="nameError" class="error" style="visibility: hidden;"></span>
+                        <input type="email" id="email" placeholder="Email">
+                        <span id="emailError" class="error" style="visibility: hidden;"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Message"></textarea>
+                        <span id="messageError" class="error" style="visibility: hidden;"></span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </section>
